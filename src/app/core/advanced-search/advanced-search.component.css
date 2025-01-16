@@ -1,0 +1,39 @@
+:host {
+    width: 100%;
+    height: 100%; /* Ensures the map container doesn't overflow */
+    display: flex;
+    /* flex-direction: ; Makes sure elements stack properly */
+    border: 1px solid palevioletred;
+    justify-content: space-between; /* Optional: Adjusts spacing between items */
+    align-items: center;
+}
+
+.search_field{
+    flex: 1;
+    max-width: 50%;
+    height: 500px;
+    border: 1px solid magenta;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+h2 {
+    padding-left: 2rem;
+}
+
+#map {
+    height: 500px;  
+    flex: 1;
+    max-width: 50%;
+    border: 1px solid #ddd; /* Optional: Add a border for clarity */
+    overflow: hidden; /* Hide anything that overflows the map */
+}
+
+.prices{
+    flex: 1;
+}
+
+.prices_section_header{
+    display: flex;
+    justify-content: space-between;
+}

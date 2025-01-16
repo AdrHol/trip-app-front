@@ -1,0 +1,23 @@
+:host {
+    /* border: 1px solid magenta; */
+    background-color: rgba(240, 255, 255, 0.8);
+    border-radius: 20px;
+    width: 300px;
+    /* height: 400px; */
+    min-width: 250px;
+}
+
+:host:hover {
+    background-color: rgba(167, 170, 170, 0.8);
+}
+
+.product-element {
+    /* border: 1px solid indigo; */
+    padding: 1.5rem;
+    cursor: pointer;
+    /* height: 100%; */
+}
+
+#description {
+    margin-left: 3rem;
+}

@@ -1,0 +1,17 @@
+<div class="search_field">
+    <app-search-product></app-search-product>
+    <div class="prices">
+        <div class="prices_section_header">
+            <h2>Prices list for: {{productTitle}}</h2>
+            <button (click)="changeSort()">sort</button>
+        </div>
+        <ul class="prices_list">
+            @for (price of currentlySelectedPrices; track $index) {
+                <li>
+                    <app-price-result [price]="price" (click)="popupPrice(price.priceId)"></app-price-result>
+                </li>
+            }
+        </ul>
+    </div>
+</div>
+<div class="map" id="map"></div>

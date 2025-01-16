@@ -1,0 +1,19 @@
+<div class="search_holder">
+    <input type="text" name="product-phrase" id="product-phrase" placeholder="Search product..." (input)="filterProductList($event)">
+    <button id="image-search-button"><img src="/camera-alt-1-svgrepo-com.png" alt="Search by image"></button>
+</div>
+<div class="message-holder">
+    <p *ngIf="productsLoading">{{loadingMessage}}</p>
+</div>
+<!-- <ul>
+    @for (product of products; track $index) {
+        <li class="product-holder">
+            <app-product-element [productObject]="product"></app-product-element>
+        </li>
+    }    
+</ul> -->
+<div class="products-list">
+    @for (product of products; track $index) {
+        <app-product-element [productObject]="product"></app-product-element>
+    }    
+</div>

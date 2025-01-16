@@ -1,0 +1,13 @@
+<form [formGroup]="productForm" (submit)="onSubmit()">
+    <ul>
+        <li>
+            <!-- <label for="title">Product title</label> -->
+            <input type="text" id="title" formControlName="title" placeholder="Product name...">
+        </li>
+        <li>
+            <!-- <label for="description">Product description</label> -->
+            <input type="text" id="description" formControlName="description" placeholder="Description...">
+        </li>
+    </ul>
+    <button id="add-button"><img src="/plus-square-svgrepo-com.png" alt="add"></button>
+</form>

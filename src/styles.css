@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    width: 100vw;
+    height: max-content;
+}
+
+app-root {
+    width: 100%;
+    height: max-content;
+}
+
+body {
+    background-color: #00ffcf;
+    font-family: "Concert One", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}

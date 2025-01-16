@@ -1,0 +1,14 @@
+:host {
+    width: 100%;
+    display: block;
+    /* border: 1px solid yellow; */
+    padding: 1rem;
+    font-family: "Concert One", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    font-size: 1rem;
+    background-color: rgb(54, 54, 168);
+}
+
+h2 {
+    text-align: center;
+}

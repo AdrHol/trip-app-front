@@ -1,0 +1,9 @@
+:host{
+    display: flex;
+    cursor: pointer;
+    border: 1px solid saddlebrown;
+}
+
+:host:hover {
+    background-color: rgb(164, 164, 164);
+}

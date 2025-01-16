@@ -1,0 +1,21 @@
+<div class="dialog_header">
+    <h3>Search product</h3>
+    <button mat-button (click)="close()" *ngIf="isModalState">Close</button>
+</div>
+<div class="input_container">
+    <input type="text" [formControl]="searchInput" placeholder="Product ....">
+</div>
+<div class="search_result_holder">
+    <ul *ngIf="!addProductOption" class="search_result_list">
+        @for (product of searchResult; track $index) {
+            <li>
+                <app-search-result [id]="product.id" [title]="product.title"></app-search-result>
+            </li>
+        }
+    </ul>
+    <button (click)="revealProductCreation()" *ngIf="addProductOption && isModalState">Create new product</button>
+    <app-product-form *ngIf="productFormVisible"></app-product-form>
+</div>
+<div>
+
+</div>

@@ -1,0 +1,8 @@
+<div class="add-form">
+    <div class="button-holder">
+        <button (click)="productForm()">Product <img src="/cart-plus-svgrepo-com.png" alt="price_icon"></button>
+        <button (click)="priceForm()">Price <img src="/price-tag-3-svgrepo-com.png" alt="price_icon"></button>
+    </div>
+    <app-price-form *ngIf="isPriceVisible"></app-price-form>
+    <app-product-form *ngIf="isProductVisible"></app-product-form>
+</div>
