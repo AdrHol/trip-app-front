@@ -5,6 +5,6 @@
 </div>
 <div class="price-check">
     <p>Quick price analysis</p>
-    <input type="number" name="fast-price-check" id="fast-price-check">
-    <button>Check price</button>
+    <input type="number" name="fast-price-check" id="fast-price-check" [formControl]="price">
+    <button (click)="submitQuickPriceAnalysis()">Check price</button>
 </div>
